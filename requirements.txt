@@ -10,4 +10,21 @@ Import the following libraries to run logistic_regression.py:
 - pandas
 - argparse
 
+Import the following libraries to run nn_classifier.py:
+- os
+- pandas
+- cv2
+- numpy
+- utils.neuralnetwork import NeuralNetwork
+- tensorflow
+- tensorflow.keras.datasets import cifar10
+- tensorflow.keras.models import Sequential
+- tensorflow.keras.layers import Dense
+- tensorflow.keras.optimizers import SGD
+- sklearn.preprocessing import LabelBinarizer
+- sklearn.model_selection import train_test_split
+- sklearn.metrics import classification_report
+- sklearn.datasets import fetch_openml
+- argparse
+
 
