@@ -1,1 +1,13 @@
+Import the following libraries to run logistic_regression.py:
+- os
+- cv2
+- numpy
+- tensorflow.keras.datasets import cifar10
+- sklearn.model_selection import train_test_split
+- sklearn.metrics import classification_report
+- sklearn.linear_model import LogisticRegression
+- sklearn.datasets import fetch_openml
+- pandas
+- argparse
+
 
