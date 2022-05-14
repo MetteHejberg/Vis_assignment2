@@ -14,7 +14,7 @@ For this assignment, you will take the classifier pipelines we covered in lectur
 ## 2. Methods
 This repository contains two scripts that classify images, one using a logistic regression classifier and one using two different neural networks
 
-```logistic_regression_classifier.py``` 
+```logistic_regression_classifier.py``` performs logistic regression to classify images
 
 ```nn_classifier.py``` uses two different neural networks to classify images. The first neural network is simpler and the second is a sequential neural network with a hidden layer. 
 
