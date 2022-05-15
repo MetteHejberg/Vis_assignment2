@@ -36,4 +36,4 @@ To run the code:
   - The data to use can either be "mnist_784" of "cifar10"
 
 ## 4. Discussion of Results
-
+The loss and accuracy of the training and validation data follow each other quite closely, so the model is not overfitting on the training data. However, the model still only achieves around 50 % accuracy on the validation data which the parameters set to create the outputs in ```out```. 
