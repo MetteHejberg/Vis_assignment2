@@ -1,5 +1,6 @@
 Import the following libraries to run logistic_regression.py:
 - os
+- sys
 - cv2
 - numpy
 - tensorflow.keras.datasets import cifar10
@@ -12,6 +13,7 @@ Import the following libraries to run logistic_regression.py:
 
 Import the following libraries to run nn_classifier.py:
 - os
+- sys
 - pandas
 - cv2
 - numpy
