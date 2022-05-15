@@ -106,10 +106,13 @@ def nn_predictor(nn, X_test_scaled, y_test):
     # print classification report without additional parameter
     print(classification_report(y_test.argmax(axis=1), y_pred))
     # get classification report
-    report = classification_report(y_test.argmax(axis=1), y_pred, output_dict = True)
-    # save classification report as csv
-    report_df = pd.DataFrame(report).transpose()
-    report_df.to_csv(os.path.join("out", "nn_report.csv"))
+    report = classification_report(y_test.argmax(axis=1), y_pred)
+    print(report)
+    # create outpath
+    p = os.path.join("out", "nn_report.txt")
+    # save classification report
+    sys.stdout = open(p, "w")
+    text_file = print(report)
 
 # a sequential neural network
 def seq_nn_model(X_train_scaled, y_train, X_test_scaled, y_test):
@@ -141,10 +144,12 @@ def seq_nn_predictions(model, X_test_scaled, y_test):
                                 predictions.argmax(axis=1)))
     # get classification report
     report = classification_report(y_test.argmax(axis=1),
-                                predictions.argmax(axis=1), output_dict = True)
-    # save classification report as csv
-    report_df = pd.DataFrame(report).transpose()
-    report_df.to_csv(os.path.join("out", "seq_nn_report.csv"))
+                                predictions.argmax(axis=1))
+    print(report)
+    p = os.path.join("out", "seq_nn_report.txt")
+    # save classification report
+    sys.stdout = open(p, "w")
+    text_file = print(report)
     
 def parse_args():
     # initialize argparse
