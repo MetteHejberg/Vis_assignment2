@@ -21,7 +21,6 @@ This repository contains two scripts that classify images, one using a logistic 
 ## 3.1 Usage ```logistic_regression.py``` 
 To run the code:
 - Pull this repository with this file structure
-- Place the images in the ```in``` folder
 - Install the packages mentioned in ```requirements.txt```
 - Set your current working directory to the level above ```src```
 - Write in the command line: ```python src/logistic_regression.py -d "the data to use"```
@@ -30,7 +29,6 @@ To run the code:
 ## 3.2 Usage ```nn_classifier.py```
 To run the code:
 - Pull this repository with this file structure
-- Place the images in the ```in``` folder
 - Place the ```utils``` folder inside the ```src``` folder
 - Install the packages mentioned in ```requirements.txt```
 - Set your current working directory to the level above ```src```
