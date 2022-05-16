@@ -37,7 +37,7 @@ To run the code:
 - Set your current working directory to the level above ```src```
 - Write in the command line: ```python src/logistic_regression.py -d "the data to use"```
   - The data to use can either be "mnist_784" of "cifar10"
-  - The output ```lr_report``` in ```out``` was created with: ```python src/logistic_regression.py -d "mnist_784"```
+  - ```lr_report.txt``` in ```out``` was created with: ```python src/logistic_regression.py -d "mnist_784"```
 
 ## 3.2 Usage ```nn_classifier.py```
 To run the code:
