@@ -8,13 +8,11 @@ Import the following libraries to run logistic_regression.py:
 - sklearn.metrics import classification_report
 - sklearn.linear_model import LogisticRegression
 - sklearn.datasets import fetch_openml
-- pandas
 - argparse
 
 Import the following libraries to run nn_classifier.py:
 - os
 - sys
-- pandas
 - cv2
 - numpy
 - utils.neuralnetwork import NeuralNetwork
