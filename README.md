@@ -18,6 +18,18 @@ This repository contains two scripts that classify images, one using a logistic 
 
 ```nn_classifier.py``` uses two different neural networks to classify images. The first neural network is simpler and the second is a sequential neural network with a hidden layer. 
 
+Since both scripts work with both the cifar10 dataset and mnist and the cifar10 dataset has labels whereas mnist does not (because the pictures are numbers, which correspond to the default labels in the classification report), I provide the list of labels and corresponding number in the classification report for the cifar10 dataset:
+- airplane = 0
+- automobile = 1
+- bird = 2
+- cat = 3
+- deer = 4
+- dog = 5
+- frog = 6
+- horse = 7
+- ship = 8
+- truck = 9
+
 ## 3.1 Usage ```logistic_regression.py``` 
 To run the code:
 - Pull this repository with this file structure
