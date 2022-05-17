@@ -50,6 +50,6 @@ To run the code:
   - The data to use can either be "mnist_784" of "cifar10"
 
 ## 4. Discussion of Results
-Since the mnist images are 1-d array, I reduced the cifar10 images to 1-d aswell, so I could use the same model for both datasets and in that way compare the model's performance. Both the logistic regression classifier and both neural networks perform significantly better on the mnist dataset, and in fact, perhaps a bit surprisingly, the logistic regression classifier performs better than the neural networks (__still true?__). You would probably getter a better performance with something like vgg16 on cifar10 which can take 2-d arrays and 3 color channels (see assignmen 3), which wouldn't work for the mnist dataset.
+Since the mnist images are 1-d array, I reduced the cifar10 images to 1-d aswell, so I could use the same model for both datasets and in that way compare the model's performance. Both the logistic regression classifier and both neural networks perform significantly better on the mnist dataset, and in fact, perhaps a bit surprisingly, the logistic regression classifier performs just as well as the neural networks. You would probably getter a better performance with something like vgg16 on cifar10 which can take 2-d arrays and 3 color channels (see assignmen 3), which wouldn't work for the mnist dataset.
 
 It seems that it is difficult to write a single, successful model for two very different datasets and the results definitely reflect this.
