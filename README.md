@@ -15,9 +15,9 @@ For this assignment, you will take the classifier pipelines we covered in lectur
 ## 2. Methods
 This repository contains two scripts that classify images, one using a logistic regression classifier and one using two different neural networks
 
-```logistic_regression_classifier.py``` performs logistic regression to classify images.
+```logistic_regression_classifier.py``` performs logistic regression to classify images from scikit learn. I use Open-cv to convert the images to arrays, convert to grayscale, normalzie. The script furthermore reshapes the images fra cifar10 to 1-d arrays, whereas the mnist images are already 1-d. Then the script intializes the logical regression classifier, gets the classification report and saves the report to ```out``` 
 
-```nn_classifier.py``` uses two different neural networks to classify images. The first neural network is simpler and prewritten (from the ```utils``` folder) and the second is a sequential neural network with a hidden layer. 
+```nn_classifier.py``` uses two different neural networks to classify images. The preprocessing of the images are the same as in the previous script. The first neural network is simpler and prewritten (from the ```utils``` folder) and the second is a sequential neural network with a hidden layer. Both models creates a classification report which is saved in ```out``` 
 
 Since both scripts work with both the cifar10 dataset and mnist and the cifar10 dataset has labels whereas mnist does not (because the pictures are numbers, which correspond to the default labels in the classification report), I provide the list of labels and corresponding number in the classification report for the cifar10 dataset:
 - airplane = 0
