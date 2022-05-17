@@ -60,7 +60,7 @@ def load_and_process_mnist(dataset):
 def load_and_process_cifar10():
     # load the data
     (X_train, y_train), (X_test, y_test) = cifar10.load_data()
-    # define the labels - STILL NOT SURE HOW TO IMPLEMENT THIS IN THE CLF-REPORT
+    # define the labels
     labels = ["airplane", 
           "automobile", 
           "bird",
