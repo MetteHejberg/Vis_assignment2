@@ -111,8 +111,8 @@ def nn_predictor(nn, X_test_scaled, y_test):
     # create outpath
     p = os.path.join("out", "nn_report.txt")
     # save classification report
-    sys.stdout = open(p, "w")
-    text_file = print(report)
+    with open(p, "w") as outfile:
+        outfile.write(report)
 
 # a sequential neural network
 def seq_nn_model(X_train_scaled, y_train, X_test_scaled, y_test):
@@ -148,8 +148,8 @@ def seq_nn_predictions(model, X_test_scaled, y_test):
     print(report)
     p = os.path.join("out", "seq_nn_report.txt")
     # save classification report
-    sys.stdout = open(p, "w")
-    text_file = print(report)
+    with open(p, "w") as outfile:
+        outfile.write(report)
     
 def parse_args():
     # initialize argparse
