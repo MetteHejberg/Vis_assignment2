@@ -1,4 +1,5 @@
 ## 1. Assignment 2 - Image classifier benchmark scripts
+Link to repository: https://github.com/MetteHejberg/Vis_assignment2
 For this assignment, you will take the classifier pipelines we covered in lecture 7 and turn them into *two separate ```.py``` scripts*. Your code should do the following:
 
 - One script should be called ```logistic_regression.py``` and should do the following:
