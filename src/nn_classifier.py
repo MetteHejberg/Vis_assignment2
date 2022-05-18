@@ -2,8 +2,6 @@
 import os
 import sys
 
-import pandas as pd
-
 # image processing
 import cv2
 
@@ -60,7 +58,7 @@ def load_and_process_mnist(dataset):
 def load_and_process_cifar10():
     # load the data
     (X_train, y_train), (X_test, y_test) = cifar10.load_data()
-    # define the labels
+    # define the labels - they will not appear in the classification report
     labels = ["airplane", 
           "automobile", 
           "bird",
@@ -103,23 +101,21 @@ def nn_model(X_train_scaled, y_train):
 def nn_predictor(nn, X_test_scaled, y_test):
     predictions = nn.predict(X_test_scaled)
     y_pred = predictions.argmax(axis=1)
-    # print classification report without additional parameter
-    print(classification_report(y_test.argmax(axis=1), y_pred))
     # get classification report
     report = classification_report(y_test.argmax(axis=1), y_pred)
     print(report)
-    # create outpath
+    # create outpath 
     p = os.path.join("out", "nn_report.txt")
     # save classification report
     with open(p, "w") as outfile:
         outfile.write(report)
-
+    
 # a sequential neural network
 def seq_nn_model(X_train_scaled, y_train, X_test_scaled, y_test):
     # initialize model
     model = Sequential()
     # set parameters 
-    model.add(Dense(256, input_shape = X_train_scaled.shape[1]), activation="relu")
+    model.add(Dense(256, input_shape=(X_train_scaled.shape[1],), activation="relu"))
     model.add(Dense(128, activation="relu"))
     # classifier layer
     model.add(Dense(10, activation="softmax"))
@@ -139,17 +135,16 @@ def seq_nn_model(X_train_scaled, y_train, X_test_scaled, y_test):
 # get predictions
 def seq_nn_predictions(model, X_test_scaled, y_test):
     predictions = model.predict(X_test_scaled, batch_size = 32)
-    # print classification report without additional parameter
-    print(classification_report(y_test.argmax(axis=1),
-                                predictions.argmax(axis=1)))
     # get classification report
-    report = classification_report(y_test.argmax(axis=1),
+    seq_report = classification_report(y_test.argmax(axis=1),
                                 predictions.argmax(axis=1))
-    print(report)
+    print(seq_report)
+    # create outpath 
     p = os.path.join("out", "seq_nn_report.txt")
     # save classification report
     with open(p, "w") as outfile:
-        outfile.write(report)
+        outfile.write(seq_report)
+ 
     
 def parse_args():
     # initialize argparse
