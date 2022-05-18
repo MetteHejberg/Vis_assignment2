@@ -28,7 +28,7 @@ def choose(data):
 def load_and_process_cifar10():
     # load the data
     (X_train, y_train), (X_test, y_test) = cifar10.load_data()
-    # define the labels
+    # define the labels - they will not appear in the classification report
     labels = ["airplane", 
           "automobile", 
           "bird",
