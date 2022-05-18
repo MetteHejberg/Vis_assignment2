@@ -3,11 +3,11 @@ Import the following libraries to run logistic_regression.py:
 - sys
 - cv2
 - numpy
-- tensorflow.keras.datasets import cifar10
-- sklearn.model_selection import train_test_split
-- sklearn.metrics import classification_report
-- sklearn.linear_model import LogisticRegression
-- sklearn.datasets import fetch_openml
+- from tensorflow.keras.datasets import cifar10
+- from sklearn.model_selection import train_test_split
+- from sklearn.metrics import classification_report
+- from sklearn.linear_model import LogisticRegression
+- from sklearn.datasets import fetch_openml
 - argparse
 
 Import the following libraries to run nn_classifier.py:
@@ -15,16 +15,16 @@ Import the following libraries to run nn_classifier.py:
 - sys
 - cv2
 - numpy
-- utils.neuralnetwork import NeuralNetwork
-- tensorflow
-- tensorflow.keras.datasets import cifar10
-- tensorflow.keras.models import Sequential
-- tensorflow.keras.layers import Dense
-- tensorflow.keras.optimizers import SGD
-- sklearn.preprocessing import LabelBinarizer
-- sklearn.model_selection import train_test_split
-- sklearn.metrics import classification_report
-- sklearn.datasets import fetch_openml
+- from utils.neuralnetwork import NeuralNetwork
+- from tensorflow
+- from tensorflow.keras.datasets import cifar10
+- from tensorflow.keras.models import Sequential
+- from tensorflow.keras.layers import Dense
+- from tensorflow.keras.optimizers import SGD
+- from sklearn.preprocessing import LabelBinarizer
+- from sklearn.model_selection import train_test_split
+- from sklearn.metrics import classification_report
+- from sklearn.datasets import fetch_openml
 - argparse
 
 
